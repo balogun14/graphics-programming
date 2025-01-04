@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>main.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d0d0d0;}
+.s1 { color: #bdbdbd;}
+.s2 { color: #6c95eb;}
+.s3 { color: #ed94c0;}
+.s4 { color: #c9a26d;}
+</style>
+</head>
+<body bgcolor="#262626">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.cpp</font>
+</center></td></tr></table>
+<pre>
+    <span class="s0">SDL_Window </span><span class="s1">*</span><span class="s0">window </span><span class="s1">= </span><span class="s2">nullptr</span><span class="s1">;</span>
+	<span class="s0">SDL_Surface </span><span class="s1">*</span><span class="s0">windowSurface </span><span class="s1">= </span><span class="s2">nullptr</span><span class="s1">;</span>
+	<span class="s0">SDL_Surface </span><span class="s1">*</span><span class="s0">imageSurface </span><span class="s1">= </span><span class="s2">nullptr</span><span class="s1">;</span>
+	<span class="s2">if </span><span class="s1">(</span><span class="s0">SDL_Init</span><span class="s1">(</span><span class="s0">SDL_INIT_VIDEO</span><span class="s1">) &lt;</span><span class="s3">0</span><span class="s1">)</span>
+	<span class="s1">{</span>
+		<span class="s0">std::cout </span><span class="s1">&lt;&lt; </span><span class="s4">&quot;Video Initialization Error&quot; </span><span class="s1">&lt;&lt; </span><span class="s0">SDL_GetError</span><span class="s1">() &lt;&lt; </span><span class="s0">std::endl</span><span class="s1">;</span>
+		
+	<span class="s1">}</span>
+	<span class="s2">else</span>
+	<span class="s1">{</span>
+		<span class="s0">windowSurface </span><span class="s1">= </span><span class="s0">SDL_GetWindowSurface</span><span class="s1">(</span><span class="s0">window</span><span class="s1">);</span>
+		<span class="s0">imageSurface </span><span class="s1">= </span><span class="s0">SDL_LOAD</span></pre>
+</body>
+</html>

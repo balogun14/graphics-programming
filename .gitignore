@@ -1,0 +1,56 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Static libraries
+*.lib
+*.a
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Build directories
+/build/
+/bin/
+/dist/
+/Debug/
+/Release/
+
+# IDE-specific files (Visual Studio, Code::Blocks, CLion, etc.)
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.VC.db
+*.ncb
+*.opendb
+*.code-workspace
+*.pro.user
+*.codelite
+*.cproject
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# SDL-specific
+.libs/
+.libs/*
+
+# Logs and Temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.DS_Sto
