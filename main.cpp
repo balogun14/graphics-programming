@@ -32,23 +32,15 @@ int main(int argc, char* argv[])
 			{
 				isRunning = false;
 			}
-			else if (event.type == SDL_KEYDOWN)
+			
+			else if (event.type == SDL_MOUSEBUTTONDOWN)
 			{
-				switch (event.key.keysym.sym)
-				{
-				case SDLK_1:
+				if (event.button.button == SDL_BUTTON_LEFT)
 					currentImage = imageOne;
-						break;
-				case SDLK_2:
+				else if (event.button.button == SDL_BUTTON_RIGHT)
 					currentImage = imageTwo;
-					break;
-				case SDLK_3:
+				else if (event.button.clicks == 1)
 					currentImage = imageThree;
-						break;
-				default:
-						std::cout << "Unknown Key Event" << event.key.keysym.sym << '\n';
-						break;
-				}
 			}
 			
 		}
